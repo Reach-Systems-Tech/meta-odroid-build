@@ -13,3 +13,6 @@ run-interactive-yocto-builder:
 	docker run -it \
 		-v $(PWD):/home/dumi_developer/yocto-work \
 		yocto-builder /bin/bash
+
+deinit-submodules:
+	git submodule deinit -f .
